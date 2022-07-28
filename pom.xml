@@ -46,7 +46,7 @@
         <evo-inflector.version>1.3</evo-inflector.version>
         <jacoco.version>0.8.8</jacoco.version>
         <jsoup.version>1.15.2</jsoup.version>
-        <junit-jupiter.version>5.8.2</junit-jupiter.version>
+        <junit-jupiter.version>5.9.0</junit-jupiter.version>
         <keycloak-adapter-bom.version>16.0.0</keycloak-adapter-bom.version>
         <lombok.version>1.18.24</lombok.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
@@ -61,7 +61,7 @@
 
         <!-- tailoring-bom -->
         <ejml.version>0.41</ejml.version>
-        <pdfbox.version>2.0.24</pdfbox.version>
+        <pdfbox.version>2.0.26</pdfbox.version>
 
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     </properties>
@@ -328,29 +328,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>owasp</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.owasp</groupId>
-                        <artifactId>dependency-check-maven</artifactId>
-                        <version>${dependency-check-maven.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
