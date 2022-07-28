@@ -42,7 +42,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
-        <archunit.version>0.22.0</archunit.version>
+        <archunit.version>0.23.1</archunit.version>
         <evo-inflector.version>1.3</evo-inflector.version>
         <jacoco.version>0.8.8</jacoco.version>
         <jsoup.version>1.15.2</jsoup.version>
